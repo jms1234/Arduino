@@ -14,6 +14,13 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 uint8_t servonum = 0;
 uint16_t endcount = 30000;
 uint16_t framecount = endcount/30;
+int pulsestart1 = 0;
+int pulsestart2 = 0;
+int pulsestart3 = 0;
+int pulsestart4 = 0;
+int pulsestart5 = 0;
+int pulsestart6 = 0;
+int pulsestart7 = 0;
 
 void setup() {
   Serial.begin(9600);
@@ -48,12 +55,12 @@ void loop() {
   for (uint16_t pulselen = 0; pulselen < endcount; pulselen++) {
     if (pulselen >= 0 && pulselen < framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -66,12 +73,12 @@ void loop() {
     }
     if (pulselen >= framecount && pulselen < 2*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 2*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -84,12 +91,12 @@ void loop() {
     }
     if (pulselen >= 2*framecount && pulselen < 3*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 3*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -104,12 +111,12 @@ void loop() {
     }
     if (pulselen >= 3*framecount && pulselen < 4*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 4*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -122,12 +129,12 @@ void loop() {
     }
     if (pulselen >= 4*framecount && pulselen < 5*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 5*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -140,12 +147,12 @@ void loop() {
     }
     if (pulselen >= 5*framecount && pulselen < 6*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 6*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -158,12 +165,12 @@ void loop() {
     }
     if (pulselen >= 6*framecount && pulselen < 7*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 7*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -176,12 +183,12 @@ void loop() {
     }
     if (pulselen >= 7*framecount && pulselen < 8*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 8*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -194,12 +201,12 @@ void loop() {
     }
     if (pulselen >= 8*framecount && pulselen < 9*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 9*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -212,12 +219,12 @@ void loop() {
     }
     if (pulselen >= 9*framecount && pulselen < 10*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 10*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -230,12 +237,12 @@ void loop() {
     }
     if (pulselen >= 10*framecount && pulselen < 11*framecount+pulsestart1){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 11*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -248,12 +255,12 @@ void loop() {
     }
     if (pulselen >= 11*framecount+pulsestart1 && pulselen < 12*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 12*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -266,12 +273,12 @@ void loop() {
     }
     if (pulselen >= 12*framecount && pulselen < 13*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 13*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -284,12 +291,12 @@ void loop() {
     }
     if (pulselen >= 13*framecount && pulselen < 14*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 14*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -302,12 +309,12 @@ void loop() {
     }
     if (pulselen >= 14*framecount && pulselen < 15*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 15*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -320,12 +327,12 @@ void loop() {
     }
     if (pulselen >= 15*framecount && pulselen < 16*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 16*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -338,12 +345,12 @@ void loop() {
     }
     if (pulselen >= 16*framecount && pulselen < 17*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 17*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -356,12 +363,12 @@ void loop() {
     }
     if (pulselen >= 17*framecount && pulselen < 18*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 18*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -374,12 +381,12 @@ void loop() {
     }
     if (pulselen >= 18*framecount && pulselen < 19*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 19*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -392,12 +399,12 @@ void loop() {
     }
     if (pulselen >= 19*framecount && pulselen < 20*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 20*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -410,12 +417,12 @@ void loop() {
     }
     if (pulselen >= 20*framecount && pulselen < 21*framecount+pulsestart1){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 21*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -428,12 +435,12 @@ void loop() {
     }
     if (pulselen >= 21*framecount+pulsestart1 && pulselen < 22*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 22*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -446,12 +453,12 @@ void loop() {
     }
     if (pulselen >= 22*framecount && pulselen < 23*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 23*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -464,12 +471,12 @@ void loop() {
     }
     if (pulselen >= 23*framecount && pulselen < 24*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 24*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -482,12 +489,12 @@ void loop() {
     }
     if (pulselen >= 24*framecount && pulselen < 25*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 25*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -500,12 +507,12 @@ void loop() {
     }
     if (pulselen >= 25*framecount && pulselen < 26*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 26*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -518,12 +525,12 @@ void loop() {
     }
     if (pulselen >= 26*framecount && pulselen < 27*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 27*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -536,12 +543,12 @@ void loop() {
     }
     if (pulselen >= 27*framecount && pulselen < 28*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 28*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
@@ -554,12 +561,12 @@ void loop() {
     }
     if (pulselen >= 28*framecount && pulselen < 29*framecount){
       pwm.setPWM(1, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(2, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(3, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(4, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(5, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(6, 0, 1*framecount+pulsestart1);
-      pwm.setPWM(7, 0, 1*framecount+pulsestart1);
+      pwm.setPWM(2, 0, 1*framecount+pulsestart2);
+      pwm.setPWM(3, 0, 1*framecount+pulsestart3);
+      pwm.setPWM(4, 0, 1*framecount+pulsestart4);
+      pwm.setPWM(5, 0, 1*framecount+pulsestart5);
+      pwm.setPWM(6, 0, 1*framecount+pulsestart6);
+      pwm.setPWM(7, 0, 1*framecount+pulsestart7);
       if (pulselen == 29*framecount - 1){
         pulsestart1 = 1*framecount+pulsestart1;
         pulsestart2 = 1*framecount+pulsestart2;
