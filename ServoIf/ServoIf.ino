@@ -13,7 +13,7 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 // our servo # counter
 uint8_t servonum = 0;
 uint16_t endcount = 30000;
-uint16_t framecount = framecount;
+uint16_t framecount = endcount/30;
 
 void setup() {
   Serial.begin(9600);

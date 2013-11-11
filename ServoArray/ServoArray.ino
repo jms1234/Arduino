@@ -58,7 +58,7 @@ void setServoPulse(uint8_t n, double pulse) {
 void loop() {
 
   for (char frame = 0 ; frame < 30 ; frame++){  //change the speed selected from the array
-    for (char i = 0 ; i < 30 ; i++){      //pulse at the current speed repeated according to framecount
+    for (char i = 0 ; i < framecount ; i++){      //pulse at the current speed repeated according to framecount
       pwm.setPWM(1, 0, framestart[1][frame] + speed_offset[1][frame]*i);
       pwm.setPWM(2, 0, framestart[2][frame] + speed_offset[2][frame]*i);
       pwm.setPWM(3, 0, framestart[3][frame] + speed_offset[3][frame]*i);
